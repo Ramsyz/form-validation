@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css"
+      integrity="sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="logo">
+          <img
+            width="50"
+            height="50"
+            src="https://img.icons8.com/ios-filled/50/login-rounded-right.png"
+            alt="login-rounded-right"
+          />
+        </div>
+        <div class="image"></div>
+        <div class="text">
+          Start for free & get <br />
+          attractive offers today!
+        </div>
+      </div>
+      <form id="form">
+        <div class="social">
+          <div class="title">Get Started</div>
+          <div class="question">
+            Already Have an Account? <br />
+            <span>Sign In</span>
+          </div>
+          <div class="btn">
+            <div class="btn-1">
+              <img
+                alt="svgImg"
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiNGRkMxMDciIGQ9Ik00My42MTEsMjAuMDgzSDQyVjIwSDI0djhoMTEuMzAzYy0xLjY0OSw0LjY1Ny02LjA4LDgtMTEuMzAzLDhjLTYuNjI3LDAtMTItNS4zNzMtMTItMTJjMC02LjYyNyw1LjM3My0xMiwxMi0xMmMzLjA1OSwwLDUuODQyLDEuMTU0LDcuOTYxLDMuMDM5bDUuNjU3LTUuNjU3QzM0LjA0Niw2LjA1MywyOS4yNjgsNCwyNCw0QzEyLjk1NSw0LDQsMTIuOTU1LDQsMjRjMCwxMS4wNDUsOC45NTUsMjAsMjAsMjBjMTEuMDQ1LDAsMjAtOC45NTUsMjAtMjBDNDQsMjIuNjU5LDQzLjg2MiwyMS4zNSw0My42MTEsMjAuMDgzeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNGRjNEMDAiIGQ9Ik02LjMwNiwxNC42OTFsNi41NzEsNC44MTlDMTQuNjU1LDE1LjEwOCwxOC45NjEsMTIsMjQsMTJjMy4wNTksMCw1Ljg0MiwxLjE1NCw3Ljk2MSwzLjAzOWw1LjY1Ny01LjY1N0MzNC4wNDYsNi4wNTMsMjkuMjY4LDQsMjQsNEMxNi4zMTgsNCw5LjY1Niw4LjMzNyw2LjMwNiwxNC42OTF6Ij48L3BhdGg+PHBhdGggZmlsbD0iIzRDQUY1MCIgZD0iTTI0LDQ0YzUuMTY2LDAsOS44Ni0xLjk3NywxMy40MDktNS4xOTJsLTYuMTktNS4yMzhDMjkuMjExLDM1LjA5MSwyNi43MTUsMzYsMjQsMzZjLTUuMjAyLDAtOS42MTktMy4zMTctMTEuMjgzLTcuOTQ2bC02LjUyMiw1LjAyNUM5LjUwNSwzOS41NTYsMTYuMjI3LDQ0LDI0LDQ0eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMxOTc2RDIiIGQ9Ik00My42MTEsMjAuMDgzSDQyVjIwSDI0djhoMTEuMzAzYy0wLjc5MiwyLjIzNy0yLjIzMSw0LjE2Ni00LjA4Nyw1LjU3MWMwLjAwMS0wLjAwMSwwLjAwMi0wLjAwMSwwLjAwMy0wLjAwMmw2LjE5LDUuMjM4QzM2Ljk3MSwzOS4yMDUsNDQsMzQsNDQsMjRDNDQsMjIuNjU5LDQzLjg2MiwyMS4zNSw0My42MTEsMjAuMDgzeiI+PC9wYXRoPgo8L3N2Zz4="
+              />
+              sign up
+            </div>
+            <div class="btn-2">
+              <img
+                alt="svgImg"
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9ImZpbGw6I0ZGRkZGRjsiPgo8cGF0aCBkPSJNIDI1IDMgQyAxMi44NjE1NjIgMyAzIDEyLjg2MTU2MiAzIDI1IEMgMyAzNi4wMTkxMzUgMTEuMTI3NTMzIDQ1LjEzODM1NSAyMS43MTI4OTEgNDYuNzI4NTE2IEwgMjIuODYxMzI4IDQ2LjkwMjM0NCBMIDIyLjg2MTMyOCAyOS41NjY0MDYgTCAxNy42NjQwNjIgMjkuNTY2NDA2IEwgMTcuNjY0MDYyIDI2LjA0Njg3NSBMIDIyLjg2MTMyOCAyNi4wNDY4NzUgTCAyMi44NjEzMjggMjEuMzczMDQ3IEMgMjIuODYxMzI4IDE4LjQ5NDk2NSAyMy41NTE5NzMgMTYuNTk5NDE3IDI0LjY5NTMxMiAxNS40MTAxNTYgQyAyNS44Mzg2NTIgMTQuMjIwODk2IDI3LjUyODAwNCAxMy42MjEwOTQgMjkuODc4OTA2IDEzLjYyMTA5NCBDIDMxLjc1ODcxNCAxMy42MjEwOTQgMzIuNDkwMDIyIDEzLjczNDk5MyAzMy4xODU1NDcgMTMuODIwMzEyIEwgMzMuMTg1NTQ3IDE2LjcwMTE3MiBMIDMwLjczODI4MSAxNi43MDExNzIgQyAyOS4zNDk2OTcgMTYuNzAxMTcyIDI4LjIxMDQ0OSAxNy40NzU5MDMgMjcuNjE5MTQxIDE4LjUwNzgxMiBDIDI3LjAyNzgzMiAxOS41Mzk3MjQgMjYuODQzNzUgMjAuNzcxODE2IDI2Ljg0Mzc1IDIyLjAyNzM0NCBMIDI2Ljg0Mzc1IDI2LjA0NDkyMiBMIDMyLjk2Njc5NyAyNi4wNDQ5MjIgTCAzMi40MjE4NzUgMjkuNTY0NDUzIEwgMjYuODQzNzUgMjkuNTY0NDUzIEwgMjYuODQzNzUgNDYuOTI5Njg4IEwgMjcuOTc4NTE2IDQ2Ljc3NTM5MSBDIDM4LjcxNDM0IDQ1LjMxOTM2NiA0NyAzNi4xMjY4NDUgNDcgMjUgQyA0NyAxMi44NjE1NjIgMzcuMTM4NDM4IDMgMjUgMyB6IE0gMjUgNSBDIDM2LjA1NzU2MiA1IDQ1IDEzLjk0MjQzOCA0NSAyNSBDIDQ1IDM0LjcyOTc5MSAzOC4wMzU3OTkgNDIuNzMxNzk2IDI4Ljg0Mzc1IDQ0LjUzMzIwMyBMIDI4Ljg0Mzc1IDMxLjU2NDQ1MyBMIDM0LjEzNjcxOSAzMS41NjQ0NTMgTCAzNS4yOTg4MjggMjQuMDQ0OTIyIEwgMjguODQzNzUgMjQuMDQ0OTIyIEwgMjguODQzNzUgMjIuMDI3MzQ0IEMgMjguODQzNzUgMjAuOTg5ODcxIDI5LjAzMzU3NCAyMC4wNjAyOTMgMjkuMzUzNTE2IDE5LjUwMTk1MyBDIDI5LjY3MzQ1NyAxOC45NDM2MTQgMjkuOTgxODY1IDE4LjcwMTE3MiAzMC43MzgyODEgMTguNzAxMTcyIEwgMzUuMTg1NTQ3IDE4LjcwMTE3MiBMIDM1LjE4NTU0NyAxMi4wMDk3NjYgTCAzNC4zMTgzNTkgMTEuODkyNTc4IEMgMzMuNzE4NTY3IDExLjgxMTQxOCAzMi4zNDkxOTcgMTEuNjIxMDk0IDI5Ljg3ODkwNiAxMS42MjEwOTQgQyAyNy4xNzU4MDggMTEuNjIxMDk0IDI0Ljg1NTU2NyAxMi4zNTc0NDggMjMuMjUzOTA2IDE0LjAyMzQzOCBDIDIxLjY1MjI0NiAxNS42ODk0MjYgMjAuODYxMzI4IDE4LjE3MDEyOCAyMC44NjEzMjggMjEuMzczMDQ3IEwgMjAuODYxMzI4IDI0LjA0Njg3NSBMIDE1LjY2NDA2MiAyNC4wNDY4NzUgTCAxNS42NjQwNjIgMzEuNTY2NDA2IEwgMjAuODYxMzI4IDMxLjU2NjQwNiBMIDIwLjg2MTMyOCA0NC40NzA3MDMgQyAxMS44MTY5OTUgNDIuNTU0ODEzIDUgMzQuNjI0NDQ3IDUgMjUgQyA1IDEzLjk0MjQzOCAxMy45NDI0MzggNSAyNSA1IHoiPjwvcGF0aD4KPC9zdmc+"
+              />
+              sign up
+            </div>
+          </div>
+
+          <div class="or">Or</div>
+        </div>
+        <!--user name input-->
+        <div>
+          <label for="username">User Name</label>
+          <i class="fa-solid fa-user"></i>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="John Doe"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <!-- email input here -->
+        <div>
+          <label for="email">Email</label>
+          <i class="far fa-envelope"></i>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="johndoe@gmail.com"
+          />
+          <i class="fa-solid fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <!-- password input her -->
+        <div>
+          <label for="password">Password</label>
+          <i class="fa-solid fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <i class="fa-solid fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
